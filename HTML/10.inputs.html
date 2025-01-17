@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+  </head>
+  <body>
+    <!--Tipo text area-->
+    <label for="nick">Nickname</label>
+    <input
+      type="text"
+      name="nick"
+      placeholder="Su nick"
+      minlength="2"
+      maxlength="8"
+    />
+    <!--Tipo text-->
+    <label for="clave">clave:</label>
+    <input type="password" name="clave" id="clave" size="20" />
+    <!--Tipo number-->
+    <label for="age">Edad:</label>
+    <input type="number" name="age" placeholder="Edad" min="14" max="99" />
+
+    <!--Tipo checkbox-->
+    <label for="Lenguaje:"></label>
+    <input type="checkbox" name="lenguaje" value="html" />HTML
+    <input type="checkbox" name="lenguaje" value="javascript" />JavaScript
+    <input type="checkbox" name="lenguaje" value="css" />CSS
+    <input type="checkbox" name="lenguaje" value="xml" />XML
+    <!--Tipo radio-->
+    <input type="radio" id="menos18" value="menos18" name="edad" />Menos de 18
+    <input type="radio" id="18a30" value="18a30" name="edad" />18 a 30
+    <input type="radio" id="31a50" value="31a50" name="edad" />31 a 50
+    <input type="radio" id="mas50" value="mas50" name="edad" />Mas de 50
+    <!--Tipo select-->
+    <label for="avengers">Elige una opcion</label>
+    <select name="avengers" id="avengers">
+      <option value="thor">Thor</option>
+      <option value="hulk">Hulk</option>
+      <option value="ironman">Ironman</option>
+    </select>
+    <!--Tipo Optgroup-->
+    <select name="ciudad">
+      <optgroup>
+        <label for="Europa">Europa</label>
+        <option value="madrid">Madrid</option>
+        <option value="londres">Londres</option>
+        <option value="paris">Paris</option>
+      </optgroup>
+      <optgroup>
+        <label for="Suramerica">Suramerica</label>
+        <option value="santiago">Santiago</option>
+        <option value="saopaulo">Sao Paulo</option>
+        <option value="lima">Lima</option>
+      </optgroup>
+    </select>
+    <!--Tipo ficheros-->
+    <label for="files">Select files</label>
+    <input type="file" name="files" id="files" multiple />
+  </body>
+</html>
